@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 6</title>
+</head>
+
+<body>
+	<p>
+		З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+	</p>
+	<script>
+		let priceProduct1 = parseFloat(prompt('вартість товару №1', ''))
+		let quantityProd1 = parseInt(prompt('кількість товару №1', ''))
+
+		let priceProduct2 = parseFloat(prompt('вартість товару №2', ''))
+		let quantityProd2 = parseInt(prompt('кількість товару №2', ''))
+
+		let priceProduct3 = parseFloat(prompt('вартість товару №3', ''))
+		let quantityProd3 = parseInt(prompt('кількість товару №3', ''))
+
+		let summProd1 = priceProduct1 * quantityProd1
+		let summProd2 = priceProduct2 * quantityProd2
+		let summProd3 = priceProduct3 * quantityProd3
+
+		let getSummOll = summProd1 + summProd2 + summProd3
+
+		document.write(`
+		<table border="1px" >
+		<tr>
+			<th>№ п/п<th>
+			<th>Кількість<th>
+			<th>Ціна<th>
+			<th>Всього<th>
+		</tr>
+		<tr>
+			<th>№1<th>
+			<th>${quantityProd1}<th>
+			<th>${priceProduct1.toFixed(2)}<th>
+			<th>${summProd1.toFixed(2)}<th>
+		</tr>
+		<tr>
+			<th>№2<th>
+			<th>${quantityProd2}<th>
+			<th>${priceProduct2.toFixed(2)}<th>
+			<th>${summProd2.toFixed(2)}<th>
+		</tr>
+		<tr>
+			<th>№3<th>
+			<th>${quantityProd3}<th>
+			<th>${priceProduct3.toFixed(2)}<th>
+			<th>${summProd3.toFixed(2)}<th>
+		</tr>
+		<th>-<th>
+		<th>-<th>
+		<th>Загальна вартість<th>
+		<th>${getSummOll.toFixed(2)}<th>
+		`)
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 0</title>
+</head>
+
+<body>
+	<script>
+		let a = parseFloat(prompt('a =', ''))
+		let b = parseFloat(prompt('b =', ''))
+		let c = parseFloat(prompt('c =', ''))
+
+		let S1 = a + 12 + b
+		document.write(`<div>S1= ${S1} </div>`)
+
+		let S2 = Math.sqrt((a + b) / (2 * a))
+		document.write(`<div>S2= ${S2.toFixed(2)} </div>`)
+
+		let S3 = Math.cbrt((a + b) * c)
+		document.write(`<div>S3= ${S3.toFixed(2)} </div>`)
+
+		let S4 = Math.sin(a / (-b))
+		document.write(`<div>S4= ${S4.toFixed(2)} </div>`)
+
+	</script>
+</body>
+
+</html>
